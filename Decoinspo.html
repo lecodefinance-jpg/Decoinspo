@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inspirations déco maison 2025 - Idées décoration intérieure, conseils et sélection produits">
+    <meta property="og:title" content="Decoinspo - Inspirations Déco Maison 2025">
+    <meta property="og:description" content="Transformez votre intérieur avec nos idées tendances, guides pratiques et sélection de produits soigneusement choisis">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200">
+    <meta property="og:type" content="website">
+    <title>Decoinspo - Inspirations Déco Maison 2025</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome pour icônes professionnelles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ==================== RESET ET VARIABLES ==================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-color: #F5F5F5;
+            --white: #FFFFFF;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --accent-green: #4CAF50;
+            --beige: #E8DCC4;
+            --hover-green: #45a049;
+            --shadow-light: 0 2px 10px rgba(0,0,0,0.05);
+            --shadow-medium: 0 4px 20px rgba(0,0,0,0.1);
+            --shadow-heavy: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ==================== HEADER AVEC NAVIGATION MODERNE ==================== */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow-medium);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 0;
+            transition: all 0.3s ease;
+        }
+
+        /* Header avec scroll - effet compact */
+        header.scrolled {
+            padding: 0.5rem 0;
+            box-shadow: var(--shadow-heavy);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 3rem;
+        }
+
+        /* Logo avec SVG inline */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-container:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-svg {
+            width: 50px;
+            height: 50px;
+        }
+
+        .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-green);
+            letter-spacing: -0.5px;
+        }
+
+        /* Menu navigation avec effets hover avancés */
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 3rem;
+        }
+
+        .nav-menu li {
+            position: relative;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 1.05rem;
+            padding: 0.5rem 0;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        /* Effet underline animé */
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-green);
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu a:hover::after,
+        .nav-menu a.active::after {
+            width: 100%;
+        }
+
+        .nav-menu a:hover {
+            color: var(--accent-green);
+        }
+
+        /* Bouton CTA dans menu */
+        .nav-cta {
+            background: linear-gradient(135deg, var(--accent-green), #66BB6A);
+            color: var(--white) !important;
+            padding: 0.7rem 1.5rem !important;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+        }
+
+        .nav-cta::after {
+            display: none;
+        }
+
+        /* Burger menu moderne */
+        .burger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .burger div {
+            width: 28px;
+            height: 3px;
+            background-color: var(--text-dark);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        .burger.active div:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+
+        .burger.active div:nth-child(2) {
+            opacity: 0;
+        }
+
+        .burger.active div:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
+        /* ==================== HERO SECTION PREMIUM ==================== */
+        .hero {
+            height: 85vh;
+            background: linear-gradient(135deg, rgba(76, 175, 80, 0.7), rgba(129, 199, 132, 0.5)), 
+                        url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920') center/cover fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Effet parallax et overlay animé */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(76, 175, 80, 0.3), transparent 70%);
+            animation: pulseGlow 8s ease-in-out infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 0.8; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            padding: 2rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-content h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            text-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        /* Boutons hero avec animations */
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.7rem;
+        }
+
+        .btn-primary {
+            background: var(--white);
+            color: var(--accent-green);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--accent-green);
+            transform: translateY(-3px);
+        }
+
+        /* Scroll indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+        }
+
+        /* ==================== SECTIONS PRINCIPALES ==================== */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 6rem 3rem;
+        }
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 1.2rem;
+            margin-bottom: 4rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Décorations de titre */
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-green), #81C784);
+            border-radius: 2px;
+        }
+
+        /* ==================== STATISTIQUES / BADGES ==================== */
+        .stats-section {
+            background: linear-gradient(135deg, var(--accent-green), #66BB6A);
+            padding: 4rem 3rem;
+            margin: 6rem 0;
+        }
+
+        .stats-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            color: var(--white);
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* ==================== GRILLE D'ARTICLES AVANCÉE ==================== */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        /* Card avec effets 3D et glassmorphism */
+        .article-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-light);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .article-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--accent-green), #81C784);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .article-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-heavy);
+        }
+
+        .article-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        /* Image avec overlay au hover */
+        .article-image-container {
+            position: relative;
+            overflow: hidden;
+            height: 280px;
+        }
+
+        .article-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .article-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .article-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.7));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: flex-end;
+            padding: 1.5rem;
+        }
+
+        .article-card:hover .article-overlay {
+            opacity: 1;
+        }
+
+        .article-category {
+            background: var(--accent-green);
+            color: var(--white);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            z-index: 10;
+        }
+
+        /* Contenu de la card */
+        .article-content {
+            padding: 2rem;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .article-meta i {
+            color: var(--accent-green);
+        }
+
+        .article-content h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+            line-height: 1.4;
+        }
+
+        .article-content p {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .article-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .read-more {
+            color: var(--accent-green);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.3s ease;
+        }
+
+        .read-more:hover {
+            gap: 1rem;
+        }
+
+        .article-likes {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* ==================== FILTRES ET RECHERCHE ==================== */
+        .filters-section {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow-light);
+        }
+
+        .filters-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 1rem 1rem 1rem 3rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 50px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--accent-green);
+            box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+        }
+
+        .search-box i {
+            position: absolute;
+            left: 1.2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-light);
+        }
+
+        .filter-tags {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-tag {
+            padding: 0.6rem 1.5rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 50px;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .filter-tag:hover,
+        .filter-tag.active {
+            background: var(--accent-green);
+            color: var(--white);
+            border-color: var(--accent-green);
+        }
+
+        /* ==================== NEWSLETTER SECTION ==================== */
+        .newsletter-section {
+            background: linear-gradient(135deg, #333333, #4a4a4a);
+            padding: 5rem 3rem;
+            margin: 6rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .newsletter-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(76, 175, 80, 0.2), transparent);
+            border-radius: 50%;
+        }
+
+        .newsletter-content {
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .newsletter-content h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .newsletter-content p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 1.2rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+        }
+
+        .newsletter-form button {
+            padding: 1.2rem 2.5rem;
+            background: var(--accent-green);
+            color: var(--white);
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .newsletter-form button:hover {
+            background: var(--hover-green);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(76, 175, 80, 0.4);
+        }
+
+        /* ==================== FOOTER PREMIUM ==================== */
+        footer {
+            background: #1a1a1a;
+            color: var(--white);
+            padding: 5rem 3rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-green);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-green);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-link {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--accent-green);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* ==================== BOUTON RETOUR EN HAUT MODERNE ==================== */
+        #backToTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, var(--accent-green), #66BB6A);
+            color: var(--white);
+            border: none;
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;
+            font-size: 1.3rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            box-shadow: 0 5px 20px rgba(76, 175, 80, 0.4);
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        #backToTop.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #backToTop:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(76, 175, 80, 0.6);
+        }
+
+        /* ==================== FORMULAIRE CONTACT MODERNE ==================== */
+        .contact-form {
+            max-width: 700px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-medium);
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.7rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            font-size: 1.05rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem 1.3rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-green);
+            box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+        }
+
+        .form-group textarea {
+            min-height: 180px;
+            resize: vertical;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 1.2rem;
+            background: linear-gradient(135deg, var(--accent-green), #66BB6A);
+            color: var(--white);
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .form-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(76, 175, 80, 0.4);
+        }
+
+        .error-message {
+            color: #d32f2f;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            display: none;
+        }
+
+        .success-message {
+            background: linear-gradient(135deg, #4CAF50, #66BB6A);
+            color: var(--white);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            display: none;
+            animation: slideInUp 0.5s ease;
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ==================== LOADER / SPINNER ==================== */
+        .loader {
+            display: none;
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(76, 175, 80, 0.2);
+            border-top-color: var(--accent-green);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 2rem auto;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* ==================== RESPONSIVE DESIGN ==================== */
+        @media (max-width: 768px) {
+            .burger {
+                display: flex;
+            }
+
+            nav {
+                padding: 1rem 1.5rem;
+            }
+
+            .nav-menu {
+                position: fixed;
+                right: -100%;
+                top: 80px;
+                flex-direction: column;
+                background-color: var(--white);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0,0,0,0.1);
+                padding: 2rem 0;
+                gap: 0;
+            }
+
+            .nav-menu li {
+                padding: 1rem 0;
+                border-bottom: 1px solid #f0f0f0;
+            }
+
+            .nav-menu.active {
+                right: 0;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 3rem 1.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .filters-container {
+                flex-direction: column;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== HEADER ==================== -->
+    <header id="header">
+        <nav>
+            <a href="#home" class="logo-container">
+                <!-- Logo SVG inline -->
+                <svg class="logo-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="95" fill="rgba(76, 175, 80, 0.1)"/>
+                    <g transform="translate(70, 80)">
+                        <path d="M 30 0 L 60 20 L 0 20 Z" fill="#4CAF50"/>
+                        <rect x="5" y="20" width="50" height="45" fill="#333333" rx="2"/>
+                        <rect x="20" y="40" width="20" height="25" fill="#E8DCC4" rx="2"/>
+                        <rect x="10" y="28" width="12" height="10" fill="#4CAF50" opacity="0.6" rx="1"/>
+                        <rect x="38" y="28" width="12" height="10" fill="#4CAF50" opacity="0.6" rx="1"/>
+                    </g>
+                    <g transform="translate(130, 95)">
+                        <line x1="0" y1="30" x2="0" y2="0" stroke="#4CAF50" stroke-width="2"/>
+                        <ellipse cx="-8" cy="10" rx="8" ry="12" fill="#4CAF50" transform="rotate(-30 -8 10)"/>
+                        <ellipse cx="8" cy="15" rx="8" ry="12" fill="#81C784" transform="rotate(30 8 15)"/>
+                        <ellipse cx="0" cy="5" rx="7" ry="13" fill="#66BB6A"/>
+                        <path d="M -10 30 L -8 40 L 8 40 L 10 30 Z" fill="#E8DCC4"/>
+                    </g>
+                </svg>
+                <span class="logo-text">Decoinspo</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="active">Accueil</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+            
+            <div class="burger" id="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== PAGE ACCUEIL ==================== -->
+    <section id="home">
+        <!-- Hero Section Premium -->
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Inspirations Déco Maison 2025</h1>
+                <p>Transformez votre intérieur avec nos idées tendances, guides pratiques et sélection de produits soigneusement choisis</p>
+                <div class="hero-buttons">
+                    <a href="#blog" class="btn-primary">
+                        <i class="fas fa-compass"></i>
+                        Découvrir les articles
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Me contacter
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down" style="color: white; font-size: 1.5rem;"></i>
+            </div>
+        </div>
+
+        <!-- Section Statistiques -->
+        <div class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Articles Publiés</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Lecteurs Mensuels</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Produits Testés</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4.9/5</div>
+                    <div class="stat-label">Note Moyenne</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Articles Récents -->
+        <div class="container">
+            <h2 class="section-title">Articles Tendances</h2>
+            <p class="section-subtitle">Découvrez nos dernières inspirations déco et guides d'achat pour créer l'intérieur de vos rêves</p>
+            
+            <!-- Filtres et Recherche -->
+            <div class="filters-section">
+                <div class="filters-container">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Rechercher un article, un style...">
+                    </div>
+                    <div class="filter-tags">
+                        <button class="filter-tag active">Tous</button>
+                        <button class="filter-tag">Salon</button>
+                        <button class="filter-tag">Chambre</button>
+                        <button class="filter-tag">Cuisine</button>
+                        <button class="filter-tag">DIY</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grille Articles -->
+            <div class="articles-grid">
+                <!-- Article 1 -->
+                <div class="article-card">
+                    <div class="article-image-container">
+                        <span class="article-category">SALON</span>
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600" alt="Salon bohème cosy avec plantes vertes, tapis berbère et coussins en textile naturel">
+                        <div class="article-overlay">
+                            <span style="color: white; font-size: 0.9rem;"><i class="fas fa-clock"></i> 8 min de lecture</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> 15 Déc 2024</span>
+                            <span><i class="far fa-eye"></i> 2.4K vues</span>
+                        </div>
+                        <h3>Salon Bohème : 10 Inspirations Cosy</h3>
+                        <p>Créez une ambiance chaleureuse et décontractée avec notre guide complet du style bohème. Textiles naturels, plantes luxuriantes et couleurs chaudes pour un espace qui vous ressemble.</p>
+                        <div class="article-footer">
+                            <a href="#article1" class="read-more">
+                                Lire l'article <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="article-likes">
+                                <i class="fas fa-heart"></i> 342
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="article-card">
+                    <div class="article-image-container">
+                        <span class="article-category">CHAMBRE</span>
+                        <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600" alt="Chambre moderne minimaliste avec tons beiges, linge de lit naturel et plante verte">
+                        <div class="article-overlay">
+                            <span style="color: white; font-size: 0.9rem;"><i class="fas fa-clock"></i> 6 min de lecture</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> 12 Déc 2024</span>
+                            <span><i class="far fa-eye"></i> 3.1K vues</span>
+                        </div>
+                        <h3>Chambre Budget : Top 10 Astuces Déco</h3>
+                        <p>Transformez votre chambre sans vous ruiner ! Nos meilleures astuces et sélection de produits abordables pour créer une oasis de détente parfaite.</p>
+                        <div class="article-footer">
+                            <a href="#article2" class="read-more">
+                                Lire l'article <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="article-likes">
+                                <i class="fas fa-heart"></i> 487
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="article-card">
+                    <div class="article-image-container">
+                        <span class="article-category">PLANTES</span>
+                        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600" alt="Intérieur urban jungle avec multiples plantes vertes suspendues et en pot">
+                        <div class="article-overlay">
+                            <span style="color: white; font-size: 0.9rem;"><i class="fas fa-clock"></i> 10 min de lecture</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> 10 Déc 2024</span>
+                            <span><i class="far fa-eye"></i> 4.2K vues</span>
+                        </div>
+                        <h3>Plantes d'Intérieur : Guide Complet 2025</h3>
+                        <p>Tout ce qu'il faut savoir pour choisir, entretenir et disposer vos plantes d'intérieur. Des variétés faciles aux arrangements avancés.</p>
+                        <div class="article-footer">
+                            <a href="#article3" class="read-more">
+                                Lire l'article <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="article-likes">
+                                <i class="fas fa-heart"></i> 521
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="article-card">
+                    <div class="article-image-container">
+                        <span class="article-category">CUISINE</span>
+                        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600" alt="Cuisine scandinave moderne avec bois clair, blanc et accessoires minimalistes">
+                        <div class="article-overlay">
+                            <span style="color: white; font-size: 0.9rem;"><i class="fas fa-clock"></i> 7 min de lecture</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> 8 Déc 2024</span>
+                            <span><i class="far fa-eye"></i> 2.8K vues</span>
+                        </div>
+                        <h3>Cuisine Scandinave : 15 Must-Have</h3>
+                        <p>Le style nordique dans votre cuisine : épuré, fonctionnel et chaleureux. Notre sélection d'accessoires et meubles indispensables.</p>
+                        <div class="article-footer">
+                            <a href="#article4" class="read-more">
+                                Lire l'article <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="article-likes">
+                                <i class="fas fa-heart"></i> 298
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 5 -->
+                <div class="article-card">
+                    <div class="article-image-container">
+                        <span class="article-category">RANGEMENT</span>
+                        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600" alt="Solutions de rangement esthétiques avec paniers en rotin et étagères en bois">
+                        <div class="article-overlay">
+                            <span style="color: white; font-size: 0.9rem;"><i class="fas fa-clock"></i> 9 min de lecture</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> 5 Déc 2024</span>
+                            <span><i class="far fa-eye"></i> 3.5K vues</span>
+                        </div>
+                        <h3>Rangement Maison : Méthode Complète</h3>
+                        <p>Organisez chaque pièce avec efficacité grâce à nos conseils experts et notre sélection de solutions de rangement pratiques et esthétiques.</p>
+                        <div class="article-footer">
+                            <a href="#article5" class="read-more">
+                                Lire l'article <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="article-likes">
+                                <i class="fas fa-heart"></i> 412
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 6 -->
+                <div class="article-card">
+                    <div class="article-image-container">
+                        <span class="article-category">ÉCLAIRAGE</span>
+                        <img src="https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?w=600" alt="Luminaires suspendus modernes et lampes d'ambiance design pour décoration intérieure">
+                        <div class="article-overlay">
+                            <span style="color: white; font-size: 0.9rem;"><i class="fas fa-clock"></i> 8 min de lecture</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> 3 Déc 2024</span>
+                            <span><i class="far fa-eye"></i> 2.9K vues</span>
+                        </div>
+                        <h3>Luminaires 2025 : Tendances Éclairage</h3>
+                        <p>Les suspensions, lampes et appliques qui sublimeront votre intérieur cette année. Design, fonctionnalité et ambiance garantis.</p>
+                        <div class="article-footer">
+                            <a href="#article6" class="read-more">
+                                Lire l'article <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="article-likes">
+                                <i class="fas fa-heart"></i> 367
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="newsletter-section">
+            <div class="newsletter-content">
+                <h2>Recevez l'inspiration chaque semaine</h2>
+                <p>Rejoignez plus de 10 000 passionnés de déco et recevez nos meilleurs articles, guides et sélections produits directement dans votre boîte mail</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Votre adresse email" required>
+                    <button type="submit">
+                        <i class="fas fa-paper-plane"></i> S'abonner
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PAGE BLOG ==================== -->
+    <section id="blog" style="display:none;">
+        <div class="container">
+            <h2 class="section-title">Tous les Articles</h2>
+            <p class="section-subtitle">Explorez notre bibliothèque complète d'inspirations, guides et conseils déco</p>
+            
+            <div class="filters-section">
+                <div class="filters-container">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Rechercher un article...">
+                    </div>
+                    <div class="filter-tags">
+                        <button class="filter-tag active">Tous</button>
+                        <button class="filter-tag">Salon</button>
+                        <button class="filter-tag">Chambre</button>
+                        <button class="filter-tag">Cuisine</button>
+                        <button class="filter-tag">Salle de bain</button>
+                        <button class="filter-tag">DIY</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="articles-grid">
+                <!-- Répétition des articles de la page d'accueil -->
+                <!-- Vous pouvez ajouter autant d'articles que nécessaire -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PAGE À PROPOS ==================== -->
+    <section id="about" style="display:none;">
+        <div class="container">
+            <h2 class="section-title">À Propos de Decoinspo</h2>
+            <p class="section-subtitle">Passionnée par la décoration d'intérieur depuis plus de 10 ans</p>
+            
+            <div style="max-width: 900px; margin: 0 auto; background: var(--white); padding: 4rem; border-radius: 20px; box-shadow: var(--shadow-medium);">
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400" alt="Portrait professionnel dans un intérieur cosy avec plantes" style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 5px solid var(--accent-green); margin-bottom: 2rem;">
+                    <h3 style="font-family: 'Montserrat', sans-serif; font-size: 2rem; margin-bottom: 1rem;">Bienvenue sur Decoinspo</h3>
+                </div>
+                
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; color: var(--text-light);">
+                    Decoinspo est né de ma passion pour la décoration d'intérieur et mon envie de partager mes découvertes avec vous. Chaque semaine, je teste, compare et sélectionne les meilleurs produits pour vous aider à créer un intérieur qui vous ressemble, sans vous ruiner.
+                </p>
+                
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; color: var(--text-light);">
+                    Mon approche ? Des conseils authentiques, des guides pratiques et une sélection de produits que j'utilise réellement chez moi. Je crois que tout le monde mérite un chez-soi qui inspire et apaise, peu importe son budget.
+                </p>
+                
+                <div style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(129, 199, 132, 0.1)); padding: 2rem; border-radius: 15px; margin: 3rem 0;">
+                    <h4 style="font-family: 'Montserrat', sans-serif; font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--accent-green);">
+                        <i class="fas fa-bullseye"></i> Ma Mission
+                    </h4>
+                    <p style="font-size: 1.05rem; line-height: 1.8; color: var(--text-dark);">
+                        Rendre la décoration d'intérieur accessible à tous en partageant des inspirations, des tutoriels et des recommandations de produits testés et approuvés. Ce blog contient des liens affiliés qui me permettent de continuer à créer du contenu gratuit et de qualité pour vous.
+                    </p>
+                </div>
+                
+                <div style="text-align: center; margin-top: 3rem;">
+                    <h4 style="font-family: 'Montserrat', sans-serif; font-size: 1.3rem; margin-bottom: 1.5rem;">Suivez-moi sur les réseaux</h4>
+                    <div class="social-links" style="justify-content: center;">
+                        <a href="https://pinterest.com" target="_blank" class="social-link">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PAGE CONTACT ==================== -->
+    <section id="contact" style="display:none;">
+        <div class="container">
+            <h2 class="section-title">Contactez-moi</h2>
+            <p class="section-subtitle">Une question, une collaboration ou simplement envie d'échanger ? Je serais ravie de vous lire</p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name"><i class="fas fa-user"></i> Nom complet</label>
+                    <input type="text" id="name" name="name" placeholder="Jean Dupont" required>
+                    <span class="error-message" id="nameError">Veuillez entrer votre nom</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Adresse email</label>
+                    <input type="email" id="email" name="email" placeholder="jean.dupont@exemple.com" required>
+                    <span class="error-message" id="emailError">Veuillez entrer un email valide</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject"><i class="fas fa-tag"></i> Sujet</label>
+                    <input type="text" id="subject" name="subject" placeholder="Demande de partenariat, question...">
+                </div>
+
+                <div class="form-group">
+                    <label for="message"><i class="fas fa-comment-dots"></i> Votre message</label>
+                    <textarea id="message" name="message" placeholder="Votre message ici..." required></textarea>
+                    <span class="error-message" id="messageError">Veuillez entrer votre message</span>
+                </div>
+
+                <button type="submit" class="form-submit">
+                    <i class="fas fa-paper-plane"></i> Envoyer le message
+                </button>
+
+                <div class="loader" id="contactLoader"></div>
+                <div class="success-message" id="successMessage">
+                    <i class="fas fa-check-circle" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <h3>Message envoyé avec succès !</h3>
+                    <p>Je vous répondrai dans les plus brefs délais.</p>
+                </div>
+            </form>
+
+            <div style="text-align: center; margin-top: 4rem; color: var(--text-light);">
+                <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">Vous préférez les réseaux sociaux ?</p>
+                <div class="social-links" style="justify-content: center;">
+                    <a href="https://pinterest.com" target="_blank" class="social-link">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:contact@decoinspo.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Decoinspo</h3>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 1.5rem;">
+                    Votre source d'inspiration pour créer l'intérieur de vos rêves. Conseils, guides et sélections produits pour tous les styles et budgets.
+                </p>
+                <div class="social-links">
+                    <a href="https://pinterest.com/decoinspo" target="_blank" class="social-link" title="Suivez-moi sur Pinterest">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-link" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" class="social-link" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="social-link" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <p style="color: rgba(255,255,255,0.6); margin-top: 1rem; font-size: 0.95rem;">
+                    <i class="fas fa-thumbtack"></i> <a href="https://pinterest.com/decoinspo" target="_blank" style="color: rgba(255,255,255,0.8); text-decoration: underline;">Suivez-moi sur Pinterest</a> pour plus d'inspirations
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> À propos</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Catégories</h3>
+                <ul>
+                    <li><a href="#blog"><i class="fas fa-couch"></i> Salon</a></li>
+                    <li><a href="#blog"><i class="fas fa-bed"></i> Chambre</a></li>
+                    <li><a href="#blog"><i class="fas fa-utensils"></i> Cuisine</a></li>
+                    <li><a href="#blog"><i class="fas fa-leaf"></i> Plantes</a></li>
+                    <li><a href="#blog"><i class="fas fa-lightbulb"></i> Éclairage</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Ressources</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-book"></i> Guide débutant</a></li>
+                    <li><a href="#"><i class="fas fa-tags"></i> Meilleurs deals</a></li>
+                    <li><a href="#"><i class="fas fa-star"></i> Top produits</a></li>
+                    <li><a href="#"><i class="fas fa-palette"></i> Palettes couleurs</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Decoinspo. Tous droits réservés.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+                Mentions légales | Politique de confidentialité | Conditions d'utilisation
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bouton Retour en Haut -->
+    <button id="backToTop" title="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script>
+        // ==================== VARIABLES GLOBALES ====================
+        const header = document.getElementById('header');
+        const burger = document.getElementById('burger');
+        const navMenu = document.getElementById('navMenu');
+        const backToTopBtn = document.getElementById('backToTop');
+        const contactForm = document.getElementById('contactForm');
+        const newsletterForm = document.getElementById('newsletterForm');
+
+        // ==================== NAVIGATION ENTRE SECTIONS ====================
+        function showSection(sectionId) {
+            // Cache toutes les sections
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            // Affiche la section cible
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.style.display = 'block';
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            // Met à jour les liens actifs dans le menu
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + sectionId) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Ferme le menu mobile
+            navMenu.classList.remove('active');
+            burger.classList.remove('active');
+        }
+
+        // Écoute tous les liens de navigation
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href.length > 1) {
+                    e.preventDefault();
+                    const targetId = href.substring(1);
+                    showSection(targetId);
+                }
+            });
+        });
+
+        // ==================== MENU BURGER ====================
+        burger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            burger.classList.toggle('active');
+        });
+
+        // ==================== HEADER AU SCROLL ====================
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+
+            // Ajoute classe scrolled au header
+            if (currentScroll > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+
+            // Affiche/cache bouton retour en haut
+            if (currentScroll > 400) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+
+            lastScroll = currentScroll;
+        });
+
+        // ==================== BOUTON RETOUR EN HAUT ====================
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // ==================== VALIDATION FORMULAIRE CONTACT ====================
+        function validateEmail(email) {
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return regex.test(email);
+        }
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            // Reset des messages d'erreur
+            document.querySelectorAll('.error-message').forEach(error => {
+                error.style.display = 'none';
+            });
+            
+            let isValid = true;
+
+            // Validation du nom
+            if (name === '') {
+                document.getElementById('nameError').style.display = 'block';
+                isValid = false;
+            }
+
+            // Validation de l'email
+            if (email === '' || !validateEmail(email)) {
+                document.getElementById('emailError').style.display = 'block';
+                isValid = false;
+            }
+
+            // Validation du message
+            if (message === '') {
+                document.getElementById('messageError').style.display = 'block';
+                isValid = false;
+            }
+
+            // Si tout est valide, envoyer le formulaire
+            if (isValid) {
+                // Afficher le loader
+                document.getElementById('contactLoader').style.display = 'block';
+                
+                // Simulation d'envoi (2 secondes)
+                setTimeout(() => {
+                    document.getElementById('contactLoader').style.display = 'none';
+                    document.getElementById('successMessage').style.display = 'block';
+                    contactForm.reset();
+                    
+                    // Cache le message de succès après 5 secondes
+                    setTimeout(() => {
+                        document.getElementById('successMessage').style.display = 'none';
+                    }, 5000);
+                }, 2000);
+
+                console.log('Formulaire envoyé:', { name, email, message });
+            }
+        });
+
+        // ==================== VALIDATION NEWSLETTER ====================
+        newsletterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const emailInput = this.querySelector('input[type="email"]');
+            const email = emailInput.value.trim();
+            
+            if (validateEmail(email)) {
+                alert('✅ Merci de votre inscription ! Vous allez recevoir nos meilleures inspirations déco chaque semaine.');
+                newsletterForm.reset();
+            } else {
+                alert('❌ Veuillez entrer une adresse email valide.');
+            }
+        });
+
+        // ==================== FILTRES ARTICLES ====================
+        const filterTags = document.querySelectorAll('.filter-tag');
+        filterTags.forEach(tag => {
+            tag.addEventListener('click', function() {
+                // Retire la classe active de tous les tags
+                filterTags.forEach(t => t.classList.remove('active'));
+                // Ajoute la classe active au tag cliqué
+                this.classList.add('active');
+                
+                // Logique de filtrage (à implémenter selon vos besoins)
+                const category = this.textContent.trim();
+                console.log('Filtre sélectionné:', category);
+            });
+        });
+
+        // ==================== RECHERCHE ====================
+        const searchInputs = document.querySelectorAll('.search-box input');
+        searchInputs.forEach(input => {
+            input.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                console.log('Recherche:', searchTerm);
+                // Logique de recherche à implémenter
+            });
+        });
+
+        // ==================== INITIALISATION ====================
+        // Affiche la page d'accueil au chargement
+        showSection('home');
+    </script>
+</body>
+</html>
